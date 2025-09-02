@@ -13,6 +13,8 @@
 
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
       .dotted-background {
         margin: 0;
@@ -21,90 +23,86 @@
         background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
         background-size: 20px 20px;
       }
-    </style>
+
+          </style>
   </head>
-  <body class="bg-[#121417]">
-    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b3036] px-10 py-3">
-          <div class="flex items-center gap-8">
-            <div class="flex items-center gap-4 text-white">
-              <div class="size-10">
-                <img src="adam.png" alt="Breach Protocol Logo" class="w-full h-full object-cover rounded-full" />
-              </div>
-              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Adam Melton</h2>
+  <body class="bg-[#121417] min-h-screen flex flex-col" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+
+  <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      
+      <header class="flex items-center justify-between border-b border-[#2b3036] px-4 md:px-10 py-3">
+        <div class="flex items-center gap-4">
+          <img src="adam.png" alt="Logo" class="w-10 h-10 rounded-full object-cover">
+          <h2 class="text-white text-lg font-bold">Adam Melton</h2>
+        </div>
+      </header>
+
+      <main class="flex-1 px-4 md:px-20 lg:px-40 py-5 dotted-background">
+        <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-8">
+
+          <div class="flex-1">
+            <span style="color: bisque;" class="word-with-tiny">He / Him</span>
+
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-white text-[53px] font-bold leading-tight min-w-72">Adam Melton</p>
             </div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5 dotted-background">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <span style="color: bisque"; class="word-with-tiny">He / Him<span class="tiny-text"></span></span>
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[53px] font-bold leading-tight min-w-72">Adam Melton</p></div>
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[53px] font-bold leading-tight min-w-72"></p></div>            
-            <h2 class="text-white text-[33px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 -m-2">Introduction:</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+            
+            <h2 class="text-white text-[33px] font-bold leading-tight px-4 pb-3 pt-5">Introduction:</h2>
+            <p class="text-white text-base px-4">
               Hello! My name is Adam Melton and my username online is usually adamanlop. If not and no matter what, you can call me Adam anytime.
             </p>
-            <h2 class="text-white text-[33px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 -m-2">Likes:</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-            I am in love with the indie game (and funnily the music) genre, as well as most fromsoft games, and mainly a lot of niche fun story telling.
-            </p>
-            <h2 class="text-white text-[33px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 -m-2">Hobbys and Skills:</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              In my free time I like to play a variety of competive online games, make music and program in either Unreal Engine/ Unity or Roblox Studio. I take pride in my games knowledge, design, mixing and producing!
-            </p>
-           <h2 class="text-white text-[33px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 -m-2">
-                How to contact me?:
-          </h2>
 
-          <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              I am free and open to discussions through my discord:
-              <a href="[@]adamanlop " class="text-blue-600 underline hover:text-blue-800"></a>
+            <h2 class="text-white text-[33px] font-bold leading-tight px-4 pb-3 pt-5">Likes:</h2>
+            <p class="text-white text-base px-4">
+              I am in love with the indie game (and funnily the music) genre, as well as most FromSoftware games, and mainly a lot of niche fun story telling.
+            </p>
+
+            <h2 class="text-white text-[33px] font-bold leading-tight px-4 pb-3 pt-5">Hobbies and Skills:</h2>
+            <p class="text-white text-base px-4">
+              In my free time I like to play a variety of competitive online games, make music, and program in Unreal Engine, Unity, or Roblox Studio. I take pride in my games knowledge, design, mixing and producing!
+            </p>
+
+            <h2 class="text-white text-[33px] font-bold leading-tight px-4 pb-3 pt-5">How to contact me?</h2>
+            <p class="text-white text-base px-4">
+              I am free and open to discussions through my Discord:
+              <a href="[@]adamanlop" class="text-blue-600 underline hover:text-blue-800">adamanlop</a>
               and also my work email 
               <span class="text-[#00aaff]">adammeltonhome@gmail.com</span> 
               ! :D
-          </p>
-
+            </p>
           </div>
-          <div class="flex px-4 pt-5 items-start gap-6">
-            <div class="bio-container text-white text-lg leading-relaxed items-center space-y-4">
-              <h1 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 -m-2">Links :D</h1>
-                <div class="flex items-center bg-[#1a1d22] text-white p-4 mt-4 mx-4 rounded-xl shadow-lg max-w-3xl space-x-4">
 
-                <div class="flex flex-col justify-between">
-                  <h3 class="text-lg font-bold">🎥 My Youtube Channel</h3>
-                  <p class="text-sm text-gray-300 mt-1"></p>
-                  <a href="https://www.youtube.com/@adamanlop" target="_blank"
-                    class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 w-64 rounded">
-                    Subscribe
-                  </a>
-                </div>
-                </div>
-                <div class="flex items-center bg-[#1a1d22] text-white p-4 mt-4 mx-4 rounded-xl shadow-lg max-w-3xl space-x-4 items-center">
+          <div class="w-full lg:w-1/3 flex flex-col gap-6">
+            <div class="bio-container text-white text-lg leading-relaxed">
+              <h1 class="text-white text-[22px] font-bold leading-tight pb-3">Links :D</h1>
 
-                <div class="flex flex-col justify-between">
-                  <h3 class="text-lg font-bold">📖 My Portfolio    </h3>
-                  <p class="text-sm text-gray-300 mt-1"></p>
-                  <a href="https://docs.google.com/presentation/d/1IE47d8p0sdykmo038P8PWvqGC2B6qEClL_71fh_yUQA/edit?usp=sharing" target="_blank"
-                    class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 w-64 rounded">
-                    View
-                  </a>
-                </div>
+              <div class="flex flex-col bg-[#1a1d22] text-white p-4 mt-4 rounded-xl shadow-lg">
+                <h3 class="text-lg font-bold">🎥 My YouTube Channel</h3>
+                <a href="https://www.youtube.com/@adamanlop" target="_blank"
+                  class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded">
+                  Subscribe
+                </a>
               </div>
-              <br />
 
+              <div class="flex flex-col bg-[#1a1d22] text-white p-4 mt-4 rounded-xl shadow-lg">
+                <h3 class="text-lg font-bold">📖 My Portfolio</h3>
+                <a href="https://docs.google.com/presentation/d/1IE47d8p0sdykmo038P8PWvqGC2B6qEClL_71fh_yUQA/edit?usp=sharing" target="_blank"
+                  class="mt-4 inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded">
+                  View
+                </a>
+              </div>
             </div>
-
-          </div>
-          <div class="flex px-4 pt-5 items-start gap-6">
-            <div class="bg-[#2b2b2b] bg-opacity-80 rounded-xl shadow-lg px-4 py-4">
-              <img src="adam.png" alt="Profile Picture" width="400" height="400" />
-            </div>
-            
           </div>
 
+        </div>
+      </main>
+    </div>
+  </div>
 
-            <div class="absolute bottom-20 left-0 right-0 flex flex-wrap justify-around px-4 pt-5 gap-9">
+</body>
+
+        <div class="flex flex-wrap justify-around py-6 px-4 pt-5 gap-9">
               <div class="flex flex-col items-center">
                 <h1 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 -m-2">
                   Silk and Song (Core 1):
@@ -146,7 +144,6 @@
               </div>  
 
             </div>
-        </div>
       </div>
     </div>
   </body>
