@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-                <style>
+                    <style>
       /* main nav mobile scroll */
       body,
       .group\/design-root,
@@ -32,7 +32,19 @@
         max-width: 100%;
         padding-bottom: 6px;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
+        scrollbar-width: auto;
+        scrollbar-color: #4b5563 transparent;
+        background: linear-gradient(to right, transparent 0%, transparent calc(100% - 20px), rgba(43, 48, 54, 0.5) 100%);
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9::-webkit-scrollbar {
+        height: 8px;
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9::-webkit-scrollbar-thumb {
+        background: #4b5563;
+        border-radius: 4px;
       }
       header .flex.items-center.gap-8 > .flex.items-center.gap-9 a {
         display: inline-flex;
@@ -65,6 +77,7 @@
       @media (min-width: 769px) {
         header .flex.items-center.gap-8 > .flex.items-center.gap-9 {
           overflow-x: visible;
+          background: none;
         }
       }
     </style>
@@ -78,7 +91,7 @@
               <div class="size-10">
                 <img src="../../BreachProtocolIcon.png" alt="Breach Protocol Logo" class="w-full h-full object-cover rounded-full" />
               </div>
-              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Breach Protocol</h2>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"><span class="hidden sm:inline">Breach Protocol</span><span class="sm:hidden">BP</span></h2>
             </div>
             <div class="flex items-center gap-9">
               <a class="text-white text-sm font-medium leading-normal" href="../../index.html">Home</a>
@@ -151,6 +164,8 @@
     </script>
   </body>
 </html>
+
+
 
 
 

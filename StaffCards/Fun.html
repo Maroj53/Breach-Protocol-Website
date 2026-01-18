@@ -19,7 +19,7 @@
     </style>
   
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-                <style>
+                    <style>
       /* main nav mobile scroll */
       body,
       .group\/design-root,
@@ -38,7 +38,19 @@
         max-width: 100%;
         padding-bottom: 6px;
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: thin;
+        scrollbar-width: auto;
+        scrollbar-color: #4b5563 transparent;
+        background: linear-gradient(to right, transparent 0%, transparent calc(100% - 20px), rgba(43, 48, 54, 0.5) 100%);
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9::-webkit-scrollbar {
+        height: 8px;
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9::-webkit-scrollbar-thumb {
+        background: #4b5563;
+        border-radius: 4px;
       }
       header .flex.items-center.gap-8 > .flex.items-center.gap-9 a {
         display: inline-flex;
@@ -71,6 +83,7 @@
       @media (min-width: 769px) {
         header .flex.items-center.gap-8 > .flex.items-center.gap-9 {
           overflow-x: visible;
+          background: none;
         }
       }
     </style>
@@ -150,6 +163,8 @@
     </div>
   </body>
 </html>
+
+
 
 
 
