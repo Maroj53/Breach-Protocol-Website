@@ -11,8 +11,63 @@
     <title>Breach Protocol</title>
     <link rel="icon" type="image/png" href="../BreachProtocolIcon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+                <style>
+      /* main nav mobile scroll */
+      body,
+      .group\/design-root,
+      .layout-container {
+        overflow-x: hidden;
+      }
+      header .flex.items-center.gap-8 {
+        min-width: 0;
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9 {
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        max-width: 100%;
+        padding-bottom: 6px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+      }
+      header .flex.items-center.gap-8 > .flex.items-center.gap-9 a {
+        display: inline-flex;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 12px;
+        }
+        header .flex.items-center.gap-8 {
+          width: 100%;
+          justify-content: space-between;
+        }
+        header .flex.items-center.gap-8 > .flex.items-center.gap-9 {
+          width: 100%;
+        }
+        header > .flex.flex-1.justify-end.gap-8 {
+          width: 100%;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          row-gap: 8px;
+        }
+        header > .flex.flex-1.justify-end.gap-8 > * {
+          flex: 1 1 200px;
+          min-width: 0;
+        }
+      }
+      @media (min-width: 769px) {
+        header .flex.items-center.gap-8 > .flex.items-center.gap-9 {
+          overflow-x: visible;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-[#121417] dark group/design-root overflow-x-auto">
@@ -122,3 +177,9 @@
     </script>
   </body>
 </html>
+
+
+
+
+
+
